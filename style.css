@@ -1,0 +1,94 @@
+
+	
+
+
+
+
+body {
+		font-size:3em;
+		color:white;
+	
+		/* Location of the image */
+		background:
+		linear-gradient( rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+		), 
+		url(name%20card.jpg);
+
+		/* Image is centered vertically and horizontally at all times */
+		background-position: center center;
+
+		/* Image doesn't repeat */
+		background-repeat: no-repeat;
+
+		/* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+		background-attachment: fixed;
+
+		/* This is what makes the background image rescale based on its container's size */
+		background-size: cover;
+
+		/* Pick a solid background color that will be displayed while the background image is loading */
+		background-color: #464646;
+
+		/* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+	}
+	
+	
+	#top,
+	#bottom,
+	#left,
+	#right {
+		background: #C7CDD4;
+		position: fixed;
+	}
+
+	#left,
+	#right {
+		top: 0;
+		bottom: 0;
+		width: 15px;
+	}
+
+	#left {
+		left: 0;
+	}
+
+	#right {
+		right: 0;
+	}
+
+	#top,
+	#bottom {
+		left: 0;
+		right: 0;
+		height: 15px;
+	}
+
+	#top {
+		top: 0;
+	}
+
+	#bottom {
+		bottom: 0;
+	}
+	
+	#side{
+		text-align: right;
+		
+	/* For mobile devices */
+
+	@media only screen and (max-width: 767px) {
+		body {
+			/* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+			background-image: url(name%20card.jpg);
+			
+			
+		}
+
+	}
+
+
