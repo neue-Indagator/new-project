@@ -1,6 +1,4 @@
-
-	
-
+@import url(fonts/font-awesome/css/font-awesome.min.css);	
 
 
 
@@ -35,7 +33,13 @@ body {
    * background: url(background-photo.jpg) center center cover no-repeat fixed;
    */
 	}
-	
+#menu-button{
+	text-align: right;
+	display: none;
+}
+.selected{
+	display:inline-block;
+}
 	
 	#top,
 	#bottom,
@@ -87,6 +91,9 @@ body {
 			background-image: url(name%20card.jpg);
 			
 			
+		}
+		#menu-button{
+			display: inline-block;
 		}
 
 	}
